@@ -1,0 +1,68 @@
+/* About Page Styles */
+.about-container {
+    padding: 100px 20px 20px; /* Account for fixed navbar */
+    text-align: center;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .about-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .about-text {
+    text-align: left;
+    max-width: 800px;
+  }
+  
+  .about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .about-text ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+  }
+  
+  .about-text li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .about-image {
+      max-width: 100%;
+    }
+  
+    .about-text {
+      text-align: center;
+    }
+  
+    .about-text ul {
+      margin-left: 1rem;
+    }
+  }
+  

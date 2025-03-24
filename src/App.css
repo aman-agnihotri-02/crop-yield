@@ -1,0 +1,186 @@
+/* Reset default margin and padding */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  z-index: 1;
+}
+
+#kitchen{
+  position: static;
+}
+
+/* Root div styles */
+#root {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #4ade80, #3b82f6); /* Gradient background */
+  color: white;
+}
+
+/* Main container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  padding: 100px 20px 20px; /* Extra padding at the top */
+  margin: 0 auto;
+}
+
+/* Heading styles */
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Paragraph styles */
+p {
+  max-width: 600px;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+/* Button container - aligns buttons side by side */
+.button-container {
+  display: flex;
+  gap: 30px; /* Space between buttons */
+  justify-content: center; /* Center align horizontally */
+  align-items: center;
+  margin-top: 2rem;
+}
+
+/* Common Button Styles */
+.button {
+  background-color: #007bff; /* Default Blue */
+  color: white;
+  padding: 15px 40px; /* Uniform padding */
+  font-size: 1.2rem; /* Same font size */
+  font-weight: bold;
+  border: none;
+  border-radius: 5px; /* Make them rectangular */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.4);
+  width: 200px; /* Fixed width */
+  height: 55px; /* Fixed height */
+  text-align: center;
+}
+
+/* Hover effect */
+.button:hover {
+  background-color: #0056b3;
+  box-shadow: 0px 6px 15px rgba(0, 123, 255, 0.6);
+  transform: scale(1.05);
+}
+
+/* Chat AI button - Green Color */
+.chat-ai-button {
+  background-color: #10b981; /* Green */
+}
+
+.chat-ai-button:hover {
+  background-color: #0a7a5c;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #065f46; /* Dark green */
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Navbar left logo */
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Navbar links */
+.navbar-right {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover,
+.navbar-link.active {
+  color: #d1fae5; /* Light green */
+  font-weight: bold;
+}
+
+
+
+#slide {
+  position: absolute;
+  left: -100px;
+  width: 100px;
+  height: 100px;
+  background: blue;
+  -webkit-animation: slide 0.5s forwards;
+  -webkit-animation-delay: 2s;
+  animation: slide 0.5s forwards;
+  animation-delay: 2s;
+}
+
+@-webkit-keyframes slide {
+  100% { left: 0; }
+}
+
+@keyframes slide {
+  100% { left: 0; }
+}
+
+#fontt{
+  background-color: #134a9c;
+  font-size: 100px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  background-image: linear-gradient(
+      -75deg,
+      transparent 0,
+      transparent 5%,
+      rgba(255,255,255,0.5) 5%,
+      rgba(255,255,255,0.5) 10%,
+      transparent 10%,
+      transparent 100%
+  );
+  background-size: 200% 100%;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  transition: 1.2s;
+}
+
+#fontt:hover{
+  background-position: -120% 0;
+}

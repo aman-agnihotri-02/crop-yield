@@ -1,0 +1,166 @@
+/* Predict Page Styles */
+.predict-container {
+    padding: 80px 20px 20px; /* Smaller padding */
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Gradient background */
+  }
+  
+  .predict-hero {
+    margin-bottom: 1.5rem; /* Smaller margin */
+  }
+  
+  .predict-title {
+    font-size: 2.5rem; /* Larger font size */
+    font-weight: bold;
+    margin-bottom: 0.5rem; /* Smaller margin */
+    color: #2c3e50; /* Dark text color */
+  }
+  
+  .predict-description {
+    font-size: 1.2rem; /* Medium font size */
+    color: #555; /* Medium text color */
+    margin-bottom: 2rem; /* Smaller margin */
+  }
+  
+  .predict-form {
+    max-width: 500px; /* Wider form */
+    margin: 0 auto;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    padding: 2rem; /* Larger padding */
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem; /* Larger margin */
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 1rem; /* Medium font size */
+    margin-bottom: 0.5rem; /* Larger margin */
+    font-weight: 600;
+    color: #2c3e50; /* Dark text color */
+  }
+  
+  .form-select,
+  .form-group input {
+    width: 100%;
+    padding: 0.75rem; /* Larger padding */
+    font-size: 1rem; /* Medium font size */
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    background: white; /* White background for dropdowns and inputs */
+    cursor: pointer;
+    color: #333; /* Dark text color */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .form-select:focus,
+  .form-group input:focus {
+    border-color: #007bff; /* Blue border on focus */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+    outline: none;
+  }
+  
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 1.5rem; /* Larger margin */
+  }
+  
+  .button {
+    flex: 1;
+    padding: 0.5rem 1rem; /* Normal padding */
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem; /* Medium font size */
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
+  }
+  
+  .predict-button {
+    background: #007bff; /* Blue button */
+    color: white;
+  }
+  
+  .predict-button:hover {
+    background: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.4);
+  }
+  
+  .reset-button {
+    background: #6c757d; /* Gray button */
+    color: white;
+  }
+  
+  .reset-button:hover {
+    background: #5a6268; /* Darker gray on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(108, 117, 125, 0.4);
+  }
+  
+  .random-button {
+    background: #28a745; /* Green button */
+    color: white;
+  }
+  
+  .random-button:hover {
+    background: #218838; /* Darker green on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(40, 167, 69, 0.4);
+  }
+  
+  .prediction-result {
+    margin-top: 2rem; /* Larger margin */
+    padding: 1rem; /* Larger padding */
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+  }
+  
+  .prediction-result h3 {
+    font-size: 1.2rem; /* Medium font size */
+    color: #2c3e50; /* Dark text color */
+  }
+  
+  /* Animations */
+  .animate-pop-in {
+    animation: pop-in 0.6s ease-out forwards;
+    opacity: 0;
+  }
+  
+  .animate-slide-up {
+    animation: slide-up 0.8s ease-out forwards;
+    opacity: 0;
+  }
+  
+  @keyframes pop-in {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes slide-up {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

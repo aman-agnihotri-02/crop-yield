@@ -1,0 +1,39 @@
+.why-use-container {
+  background: linear-gradient(to right, #4caf50, #2196f3); /* Same as main bg */
+  padding: 50px 10%;
+  text-align: center;
+}
+
+.why-use-container h2 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.why-use-grid {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.why-use-card {
+  background: rgba(255, 255, 255, 0.15); /* Transparent white for contrast */
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  color: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+.why-use-card:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: white;
+}
